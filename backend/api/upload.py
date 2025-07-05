@@ -5,8 +5,8 @@ from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from fastapi.responses import JSONResponse
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import PointStruct, VectorParams, Distance
-from backend.services.chunker import chunk_pdf
-from backend.services.embedder import batch_embed
+from services.chunker import chunk_pdf
+from services.embedder import batch_embed
 
 QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
 UPLOAD_DIR = os.path.join(os.path.dirname(__file__), "../uploads")

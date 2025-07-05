@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from fastapi import APIRouter
 from qdrant_client import QdrantClient
 import os
-from backend.services.embedder import batch_embed
+from services.embedder import batch_embed
 
 QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
 
