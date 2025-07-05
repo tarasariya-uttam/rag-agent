@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from backend.api.chat import router as chat_router
 from backend.api.upload import router as upload_router
 from backend.api.search import router as search_router
 from backend.api.journal import router as journal_router
@@ -10,6 +11,7 @@ from backend.api.journal import router as journal_router
 load_dotenv()
 
 app = FastAPI()
+app.include_router(chat_router)
 app.include_router(upload_router)
 app.include_router(search_router)
 app.include_router(journal_router)
