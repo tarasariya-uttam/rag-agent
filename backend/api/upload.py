@@ -63,7 +63,8 @@ async def upload_file(
                 "journal": chunk["journal"],
                 "publish_year": chunk["publish_year"],
                 "usage_count": chunk["usage_count"],
-                "attributes": chunk["attributes"]
+                "attributes": chunk["attributes"],
+                "text": chunk["text"]
             }
         )
         for chunk, vector in zip(chunks, vectors)
