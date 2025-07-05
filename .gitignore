@@ -42,4 +42,7 @@ frontend/.vite
 *.ntvs*
 *.njsproj
 *.sln
-*.sw? 
+*.sw?
+
+# Uploads
+uploads/ 
