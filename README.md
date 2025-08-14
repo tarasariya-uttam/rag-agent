@@ -1,4 +1,4 @@
-# GenAI Labs Technical Challenge
+# RAG QDRANT Vector database
 
 A comprehensive document ingestion and AI-powered chat system built with modern technologies. This project demonstrates a complete RAG (Retrieval-Augmented Generation) pipeline with document processing, vector storage, and intelligent chat capabilities.
 
